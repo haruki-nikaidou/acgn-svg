@@ -5,5 +5,12 @@
         "author": "Plr",
         "authorLink": "https://blog.plr.moe",
         "artworkSrc": "first.svg"
+    },
+    {
+        "name": "大丛雨",
+        "tags": ["ムラサメ"],
+        "author": "Congyu VPN",
+        "authorLink": "",
+        "artworkSrc": "big murasame.svg"
     }
 ]
