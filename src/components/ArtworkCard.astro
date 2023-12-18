@@ -18,7 +18,7 @@ const tags = Astro.props.artwork.tags;
 
 <div class="artwork-card">
     <div class="image-container">
-        <img src={"/artworks/" + artworkSrc} alt={name}/>
+        <img src={"/artworks/" + artworkSrc} alt={name} loading="lazy"/>
     </div>
     <div class="artwork-info">
         <h3><a href={"/artworks/" + artworkSrc} download={"/artworks/" + artworkSrc}>{name}</a></h3>
