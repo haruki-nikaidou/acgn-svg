@@ -1,11 +1,49 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import artworksListJson from '../../artworksInfo.json';
+import type { Artwork } from '../../components/ArtworkCard.astro';
+import ArtworkCard from '../../components/ArtworkCard.astro';
+
+const artworksList = artworksListJson as unknown as Artwork[];
+artworksList.reverse();
 ---
 
 <Layout title="ACGN SVG Artworks">
-
+<main>
+    {
+        artworksList.map( (artwork)=> {
+            return <ArtworkCard artwork={artwork} />
+        })
+    }
+</main>
 </Layout>
 
 <style>
+main {
+    display: grid;
+    margin: 3rem auto;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    width: 100%;
+    max-width: 1024px;
+    gap: 1rem;
+    padding: 1rem;
+}
 
+@media (min-width: 640px) {
+    main {
+        grid-template-columns: repeat(2, minmax(0, 2fr));
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(3, minmax(0, 3fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: repeat(4, minmax(0, 4fr));
+    }
+}
 </style>

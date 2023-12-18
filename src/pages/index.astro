@@ -12,7 +12,7 @@ import Layout from '../layouts/Layout.astro';
             ACGN SVG Club
         </h1>
         <p>
-            A lot of ACGN images do not have a high resolution. In contrast, huge amounts of space are often taken up pointlessly for higher resolution, especially for comic and anime.
+            A lot of ACGN images do not have a high resolution. In contrast, huge amounts of space are often taken up unexpectedly for higher resolution, especially for comic and anime.
         </p>
         <p>
             There are some inverse graphics researches, like <a href="https://arxiv.org/abs/2007.02190" target="_blank">BézierSketch</a>, which can convert low-resolution images to vector graphics with no larger size but more clear. Maybe there will be some algorithms that can convert all kinds of ACGN images to vector graphics in future. 
@@ -25,7 +25,7 @@ import Layout from '../layouts/Layout.astro';
         </p>
         <ol>
             <li>
-                Must be a <strong>colored</strong> illustration of anime, comic, light novel or game.
+                Must be a <strong>colored</strong> illustration of anime, comic, game or light novel.
             </li>
             <li>
                 Must be SVG compliant and render perfectly as SVG.
@@ -44,7 +44,7 @@ import Layout from '../layouts/Layout.astro';
         max-width: 50rem;
         margin: 0 auto;
         padding: 3rem;
-        font-size: 1.2rem;
+        font-size: 18px;
     }
 
     #large-logo {
@@ -82,5 +82,15 @@ import Layout from '../layouts/Layout.astro';
     .link-button-container a:hover {
         text-decoration: none;
         background-color: #215E7F;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .link-button-container a {
+            color: #132B38;
+            background-color: #D8F1FF;
+        }
+        .link-button-container a:hover {
+            background-color: #70CDFF;
+        }
     }
 </style>
