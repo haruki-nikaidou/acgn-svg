@@ -1,22 +1,30 @@
 
 
-<header class="flex">
-    <span class="flex">
-        <img src="/favicon.svg" height="36px" width="36px" alt="ACGN SVG Club"/>
-        <h1>
-            ACGN SVG Club
-        </h1>
-    </span>
-    <nav class="flex">
-        <a href="/">Home</a>
-        <a href="/artworks">Artworks</a>
-        <a href="https://github.com/haruki-nikaidou/acgn-svg" target="_blank">GitHub</a>
-    </nav>
+<header>
+    <div class="flex">
+        <span class="flex">
+            <img src="/favicon.svg" height="36px" width="36px" alt="ACGN SVG Club"/>
+            <h1>
+                ACGN SVG Club
+            </h1>
+        </span>
+        <nav class="flex">
+            <a href="/">Home</a>
+            <a href="/artworks">Artworks</a>
+            <a href="https://github.com/haruki-nikaidou/acgn-svg" target="_blank">GitHub</a>
+        </nav>
+    </div>
 </header>
 
 <style>
     header {
         background-color: #45AAE0;
+    }
+    header > div {
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        box-sizing: border-box;
         padding: 0.75rem 1rem;
         justify-content: space-between;
     }
@@ -28,7 +36,7 @@
     }
 
     @media (prefers-color-scheme: dark) {
-        header {
+        header > div {
             background-color: #00396B;
         }
     }
