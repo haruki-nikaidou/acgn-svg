@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #132B38;
+}
+
+html {
+    height: 100%;
+    background: linear-gradient( #BBE9F7, #dcf7ff);
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        height: 100%;
+        background: linear-gradient( #1A353D, #192326);
+    }
+    * {
+        color: #D8F1FF;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #215E7F;
+}
+
+@media (prefers-color-scheme: dark) {
+    a {
+        color: #70CDFF;
+    }
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    margin-left: 2rem;
+}
